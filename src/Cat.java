@@ -1,6 +1,6 @@
 import java.awt.Polygon;
 
-public class Cat extends Actor {
+public class Cat extends Actor implements Grab{
   public Cat(Cell inLoc) {
     this.loc = inLoc; 
     
@@ -21,5 +21,9 @@ public class Cat extends Actor {
     face.addPoint(loc.x + 29, loc.y + 15);
     face.addPoint(loc.x + 17, loc.y + 30);
     shapes.add(face);
+  }
+
+  public void grabbing(){
+    System.out.println("The cat is playing with the wool!");
   }
 }
