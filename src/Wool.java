@@ -13,10 +13,10 @@ public class Wool extends Item {
 
     public void paint(Graphics g){
         g.setColor(Color.MAGENTA);
-        g.fillOval(getLoc().x + 8, getLoc().y + 8, 20, 20);
+        g.fillOval(getLoc().x + 5, getLoc().y + 5, 20, 20);
         g.setColor(Color.BLACK);
-        g.drawString("Wool", getLoc().x + 5, getLoc().y +40);
-        
+        g.drawString("Wool", getLoc().x, getLoc().y + 35);
+
     }
 
 }
