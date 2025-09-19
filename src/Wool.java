@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 
 public class Wool extends Item {
@@ -12,6 +13,7 @@ public class Wool extends Item {
     }
 
     public void paint(Graphics g){
+        g.setFont(new Font("Arial", Font.PLAIN, 10));
         g.setColor(Color.MAGENTA);
         g.fillOval(getLoc().x + 5, getLoc().y + 5, 20, 20);
         g.setColor(Color.BLACK);
