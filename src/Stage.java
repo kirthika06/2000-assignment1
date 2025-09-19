@@ -18,6 +18,7 @@ public class Stage {
     //creating items and adding them to the list 
     items.add(new Wool(grid.cellAtColRow(5,5).get()));
     items.add(new Worm(grid.cellAtColRow(10,3).get()));
+    items.add(new Meat(grid.cellAtColRow(2, 3).get()));
 
 
   }

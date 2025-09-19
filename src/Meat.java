@@ -11,9 +11,10 @@ public class Meat extends Item implements PickItem {
     public void paint(Graphics g){
         g.setColor(Color.RED);
         g.fillOval(getLoc().x +8, getLoc().y + 8, 18,12);
-
         g.setColor(Color.BLACK);
+        g.drawString("Meat", getLoc().x, getLoc().y + 32);
         g.setFont(new Font("Arial", Font.PLAIN, 10));
+
     }
 
     public void pick(Actor actor){
