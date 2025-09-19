@@ -8,10 +8,6 @@ public class Worm extends Item implements PickItem {
         super(loc, "Worm");
     }
 
-    public void interact(){
-        System.out.println("The worm moves!");
-    }
-
     public void pick(Actor actor){
         System.out.println("The bird picks at the worm!");
     }
