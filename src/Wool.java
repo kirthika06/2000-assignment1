@@ -8,9 +8,10 @@ public class Wool extends Item {
              super(loc, "Wool");
         }
        
-    public void interact(){
-        System.out.println("The cat is playing with the wool!");
+  public void pick(Actor actor){
+        System.out.println("The cat plays with the wool!");
     }
+
 
     public void paint(Graphics g){
         g.setFont(new Font("Arial", Font.PLAIN, 10));
