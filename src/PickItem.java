@@ -1,4 +1,4 @@
 public interface PickItem {
 
-    void pick(Actor actor);
+    boolean pickedBy (Actor actor);
 }
