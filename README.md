@@ -1,8 +1,19 @@
-# Welcome to COMP2000 - Object Oriented Programming Practices
-## Session 2, 2025
+Name: Kirthika Nadimuthu
 
-Please ensure that you follow the weekly updates in this repository
+Overview:
+This project implements a simple item-picking game featuring different actors (Cat, Dog, Bird) and their respective items (Wool, Meat and a Worm).
 
-You are free to clone this repository into your own hosted git environment, such as Github, Bitbucket, or Gitlab.
+The program successfully demonstrates inheritance through an Item superclass with subclasses - Wool, Meat and Worm. Each subclass overrides the pickedBy method to define which actor can pick it up.
 
-*However*, please be aware that any repository containing your assignment code **must** be made private. Any repository with assignment code that is public available, or found to be shared with other students, will be considered a violation of the academic integrity policy.
+There is a PickItem interface to define items that can be picked by their respective actors. This provides a common structure for all items that can be picked, supporting polymorphism. 
+
+Custom classes use generics to manage the actors and items on the grid. 
+
+
+- The gird interaction shows the type of cell and details when hovering over a specifc cell
+
+
+
+Compile and Run the program:
+1. Navigate to the project folder and compile all the java files
+2. Run the 
