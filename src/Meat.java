@@ -8,6 +8,10 @@ public class Meat extends Item implements PickItem {
         super(loc, "Meat");
     }
 
+    public boolean pickedBy (Actor actor){
+        return actor instanceof Dog;
+    }
+
     public void paint(Graphics g){
         g.setColor(Color.RED);
         g.fillOval(getLoc().x +8, getLoc().y + 8, 18,12);
