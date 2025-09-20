@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
-public class Wool extends Item {
+public class Wool extends Item implements PickItem {
 
         public Wool(Cell loc) {
              super(loc, "Wool");
