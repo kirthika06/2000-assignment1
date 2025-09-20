@@ -8,6 +8,10 @@ public class Worm extends Item implements PickItem {
         super(loc, "Worm");
     }
 
+    public boolean pickedBy(Actor actor){
+        return actor instanceof Bird;
+    }
+
     public void pick(Actor actor){
         System.out.println("The bird picks at the worm!");
     }

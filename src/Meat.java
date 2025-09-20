@@ -12,6 +12,10 @@ public class Meat extends Item implements PickItem {
         return actor instanceof Dog;
     }
 
+     public void pick(Actor actor){
+        System.out.println("The dog is eating the meat!");
+    }
+
     public void paint(Graphics g){
         g.setColor(Color.RED);
         g.fillOval(getLoc().x +8, getLoc().y + 8, 18,12);
@@ -21,9 +25,7 @@ public class Meat extends Item implements PickItem {
 
     }
 
-    public void pick(Actor actor){
-        System.out.println("The dog is eating the meat!");
-    }
+   
 
  
 
