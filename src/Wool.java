@@ -7,6 +7,10 @@ public class Wool extends Item {
         public Wool(Cell loc) {
              super(loc, "Wool");
         }
+
+        public boolean pickedBy(Actor actor){
+            return actor instanceof Cat;
+        }
        
   public void pick(Actor actor){
         System.out.println("The cat plays with the wool!");

@@ -2,7 +2,6 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -13,7 +12,7 @@ public class Main extends JFrame {
     }
 
     class Canvas extends JPanel implements MouseMotionListener {
-      Stage stage = new Stage();
+      Stage<Actor, Item> stage = new Stage<>();
       
       public Canvas() {
         setPreferredSize(new Dimension(1024, 720));  // Changed to 1024x720
