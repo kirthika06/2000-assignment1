@@ -21,8 +21,33 @@ public class Cell extends Rectangle {
     if(contains(mousePos)) {
       g.setColor(Color.GRAY);
     } else {
-      g.setColor(Color.WHITE);
+      switch (type){
+        case "Grass":
+        g.setColor(new Color(52, 235,146));
+        break;
+
+        case "Water":
+        g.setColor(new Color(52, 204, 235));
+        break;
+
+        case "Sand":
+        g.setColor(new Color(237, 201, 175));
+        break;
+
+        case "Rock":
+        g.setColor(Color.LIGHT_GRAY);
+        break;
+
+        case "Forest":
+        g.setColor(new Color(34, 139, 34));
+        break;
+
+        default: g.setColor(Color.WHITE);
+      }
+
     }
+
+
     g.fillRect(x, y, size, size);
     g.setColor(Color.BLACK);
     g.drawRect(x, y, size, size);

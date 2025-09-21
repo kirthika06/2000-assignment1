@@ -16,4 +16,4 @@ Custom classes use generics to manage the actors and items on the grid.
 
 Compile and Run the program:
 1. Navigate to the project folder and compile all the java files
-2. Run the 
+2. Run the program 
