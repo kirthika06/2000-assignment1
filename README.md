@@ -10,7 +10,7 @@ There is a PickItem interface to define items that can be picked by their respec
 Custom classes use generics to manage the actors and items on the grid. 
 
 
-- The gird interaction shows the type of cell and details when hovering over a specifc cell
+The gird interaction shows the type of cell and details when hovering over a specifc cell. Each cell is. a different colour to show what type it is. 
 
 
 
